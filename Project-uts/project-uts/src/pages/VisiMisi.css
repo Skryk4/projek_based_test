@@ -1,0 +1,103 @@
+.visi-misi-section {
+  min-height: 750px;
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.visi-misi-container {
+  display: flex;
+  gap: 3rem;
+  background-color: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 8px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.visi-misi-sidebar {
+  flex: 0 0 220px;
+  border-right: 1px solid #ddd;
+  padding-right: 2rem;
+}
+
+.sidebar-title {
+  color: #b30000;
+  border-bottom: 1.5px solid #b30000;
+  width: 120px;
+  padding-bottom: 0.3rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: none;
+}
+
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.sidebar-list li {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-list li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-list a {
+  color: #000;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.sidebar-list a.active-link {
+  color: #b30000;
+  font-weight: 600;
+}
+
+.visi-misi-content {
+  flex: 1;
+}
+
+.content-title {
+  position: relative;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: 'Georgia', serif;
+}
+
+.content-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1.5px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #b30000;
+}
+
+.content-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.content-list {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  padding-left: 1.2rem;
+}
+
+.content-list li {
+  margin-bottom: 0.8rem;
+}
+
+.content-list li:last-child {
+  margin-bottom: 0;
+}
