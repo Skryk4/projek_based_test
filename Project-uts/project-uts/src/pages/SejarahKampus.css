@@ -51,6 +51,18 @@
   line-height: 1.8;
   max-width: 900px;
   z-index: 1;
+  animation: slideInFromLeft 1s ease forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .sejarah-content p {

@@ -1,34 +1,45 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import '../App.css';
-import './SejarahKampus.css';
+import './ContactUpdated.css';
 
 const Contact = () => {
   return (
-    <Container>
-      <Row>
-        <Col>
-          <h1>Contact Us</h1>
-          <Form>
-            <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter your name" />
-            </Form.Group>
-            <Form.Group controlId="formEmail" className="mt-3">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter your email" />
-            </Form.Group>
-            <Form.Group controlId="formMessage" className="mt-3">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} placeholder="Enter your message" />
-            </Form.Group>
-            <Button variant="primary" type="submit" className="mt-3">
-              Submit
-            </Button>
-          </Form>
-        </Col>
-      </Row>
-    </Container>
+    <div className="contact-page">
+      <div className="contact-container">
+        <div className="contact-left">
+          <h2>Kontak Kami</h2>
+          <p>Silahkan tinggalkan pesan anda, pada kolom yang tersedia.</p>
+        </div>
+        <div className="contact-right">
+          <form className="contact-form">
+            <label htmlFor="name">Nama Anda:</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Masukkan Nama" 
+              required 
+            />
+            <label htmlFor="email">E-mail Anda:</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Masukkan Email" 
+              required 
+            />
+            <label htmlFor="message">Pesan Anda:</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              placeholder="Masukkan Pesan" 
+              rows="5" 
+              required 
+            />
+            <button type="submit">POST</button>
+          </form>
+        </div>
+      </div>
+    </div>
   );
 };
 

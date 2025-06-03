@@ -1,14 +1,13 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
-import About from '../pages/About';
+// import About from '../pages/About'; // Removed unused import
 import Services from '../pages/Services';
 import Contact from '../pages/Contact';
 import ProfilKampus from '../pages/ProfilKampus';
 import ProgramStudi from '../pages/ProgramStudi';
 import BackgroundWrapper from '../components/BackgroundWrapper';
 
-import SambutanDirektur from '../pages/SambutanDirektur';
 import StrukturOrganisasi from '../pages/StrukturOrganisasi';
 import VisiMisi from '../pages/VisiMisi';
 import SejarahKampus from '../pages/SejarahKampus';
@@ -25,11 +24,6 @@ const AppRoutes = () => {
       <Route path="/about" element={
         <BackgroundWrapper>
           <SejarahKampus />
-        </BackgroundWrapper>
-      } />
-      <Route path="/about/sambutan" element={
-        <BackgroundWrapper>
-          <SambutanDirektur />
         </BackgroundWrapper>
       } />
       <Route path="/about/struktur" element={
@@ -68,6 +62,11 @@ const AppRoutes = () => {
         </BackgroundWrapper>
       } />
       <Route path="/program-studi" element={
+        <BackgroundWrapper>
+          <ProgramStudi />
+        </BackgroundWrapper>
+      } />
+      <Route path="/program-studi/perhotelan" element={
         <BackgroundWrapper>
           <ProgramStudi />
         </BackgroundWrapper>

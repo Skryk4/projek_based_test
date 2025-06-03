@@ -31,21 +31,17 @@ const NavigationBar = () => {
             <Nav className="mx-auto align-items-center">
               <Nav.Link as={NavLink} to="/" className="text-dark fw-bold">BERANDA</Nav.Link>
               <NavDropdown title="PROFIL KAMPUS" id="profil-kampus-nav-dropdown" className="text-dark fw-bold">
-                <NavDropdown.Item as={NavLink} to="/about/sambutan">Sambutan Direktur</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/about/struktur">Struktur Organisasi</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/about/visi-misi">Visi, Misi, Dan Tujuan</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/about/sejarah">Sejarah Kampus</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/about/akreditasi">Akreditasi</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="PROGRAM STUDI" id="program-studi-nav-dropdown" className="text-dark fw-bold">
-                <NavDropdown.Item as={NavLink} to="/program-studi/manajemen-pariwisata">Manajemen Pariwisata</NavDropdown.Item>
                 <NavDropdown.Item as={NavLink} to="/program-studi/perhotelan">Perhotelan</NavDropdown.Item>
-                <NavDropdown.Item as={NavLink} to="/program-studi/bahasa-inggris">Bahasa Inggris</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="AKADEMIK" id="akademik-nav-dropdown" className="text-dark fw-bold">
-                <NavDropdown.Item as={NavLink} to="/akademik/akademik">PMB</NavDropdown.Item>
+                <NavDropdown.Item as={NavLink} to="https://docs.google.com/forms/d/e/1FAIpQLSfmbyWqAIR095xjnMfZCiBcIxMhUU0f0iiz4lSK3W2M2_R-OQ/viewform">PMB</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={NavLink} to="/kemahasiswaan" className="text-dark fw-bold">KEMAHASISWAAN</Nav.Link>
               <Nav.Link as={NavLink} to="/contact" className="text-dark fw-bold">HUBUNGI KAMI</Nav.Link>
             </Nav>
           </Navbar.Collapse>
